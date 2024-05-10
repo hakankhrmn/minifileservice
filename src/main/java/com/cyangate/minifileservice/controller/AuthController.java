@@ -27,8 +27,8 @@ public class AuthController {
 	private final UserService userService;
 	private final ModelMapper modelMapper;
 
-	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public ResponseEntity<?> login(@RequestBody AuthenticationRequest authenticationRequest) throws Exception {
+	@PostMapping("/login")
+	public ResponseEntity<AuthenticationResponse> login(@RequestBody AuthenticationRequest authenticationRequest) throws Exception {
 		try {
 			authenticationManager.authenticate(
 					new UsernamePasswordAuthenticationToken(authenticationRequest.getUsername(), authenticationRequest.getPassword()));
@@ -50,8 +50,8 @@ public class AuthController {
 
 	}
 
-	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public ResponseEntity<?> saveUser(@RequestBody UserDto userDto) throws Exception {
+	@PostMapping("/register")
+	public ResponseEntity<UserDto> saveUser(@RequestBody UserDto userDto) {
 		return ResponseEntity.ok(userService.save(userDto));
 	}
 }

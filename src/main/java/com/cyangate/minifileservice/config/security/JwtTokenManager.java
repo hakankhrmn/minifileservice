@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-import static com.cyangate.minifileservice.model.RoleName.ADMIN_USER;
-import static com.cyangate.minifileservice.model.RoleName.REGULAR_USER;
+import static com.cyangate.minifileservice.model.RoleNameEnum.ADMIN_USER;
+import static com.cyangate.minifileservice.model.RoleNameEnum.REGULAR_USER;
 
 @Service
 public class JwtTokenManager {

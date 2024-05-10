@@ -11,8 +11,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import static com.cyangate.minifileservice.model.RoleName.ADMIN_USER;
-import static com.cyangate.minifileservice.model.RoleName.REGULAR_USER;
+import static com.cyangate.minifileservice.model.RoleNameEnum.ADMIN_USER;
+import static com.cyangate.minifileservice.model.RoleNameEnum.REGULAR_USER;
 
 @Component
 public class DbInitializer implements CommandLineRunner {

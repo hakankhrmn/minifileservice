@@ -1,6 +1,6 @@
 package com.cyangate.minifileservice.model;
 
-public enum RoleName {
+public enum RoleNameEnum {
 	ADMIN_USER,
 	REGULAR_USER
 }

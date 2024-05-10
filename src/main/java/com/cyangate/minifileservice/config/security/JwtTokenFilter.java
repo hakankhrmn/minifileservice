@@ -46,11 +46,7 @@ public class JwtTokenFilter extends OncePerRequestFilter {
 			} else {
 				System.out.println("Cannot set the Security Context");
 			}
-		}catch(ExpiredJwtException ex)
-		{
-			httpServletRequest.setAttribute("exception", ex);
-		}
-		catch(BadCredentialsException ex)
+		}catch(ExpiredJwtException | BadCredentialsException ex)
 		{
 			httpServletRequest.setAttribute("exception", ex);
 		}

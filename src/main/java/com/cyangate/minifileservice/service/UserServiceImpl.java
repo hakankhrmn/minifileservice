@@ -44,7 +44,10 @@ public class UserServiceImpl implements UserService {
 		newUser.setPassword(bcryptEncoder.encode(userDto.getPassword()));
 		newUser.setUserRole(userRole);
 
-		return modelMapper.map(userRepository.save(newUser), UserDto.class);
+		UserDto userDtoResponse = modelMapper.map(userRepository.save(newUser), UserDto.class);
+		userDtoResponse.setUserRoleRoleName(userRole.getRoleName());
+
+		return userDtoResponse;
 	}
 
 	@Override
