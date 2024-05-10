@@ -15,7 +15,7 @@ import static com.cyangate.minifileservice.model.RoleName.REGULAR_USER;
 @Service
 public class JwtTokenManager {
 
-	private static final int validity = 15 * 60 * 1000;
+	private static final int validity = 30 * 60 * 1000;
 	private String secret="asdfghjkliqwertyuopzxcvbnmasdfghjkliqwertyuopzxcvbnm";
 
 
