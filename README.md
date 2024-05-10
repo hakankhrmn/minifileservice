@@ -32,21 +32,40 @@ That's it. Now you can [click this link](http://localhost:8080/swagger-ui/) to o
 - username : admin and password: admin
 - username : user and password: user
 <br/>
-<img src = "/images/Swagger 1.jpg">
+<img src = "/docs/images/Swagger1.png">
 <br/><br/>
 
-- Then click to the Authorize button and type 'Bearer ' then paste the token here (Bearer + space + token). When you click to the Authorize button swagger ui will be authorized and all other request will be runnuble
+- Then click to the Authorize button and type 'Bearer ' then paste the token here (Bearer + space + token). When you click to the Authorize button swagger ui will be authorized and all other request will be runnuble.
 <br/>
-<img src = "/images/Swagger 2.jpg">
+<img src = "/docs/images/Swagger2.png">
 <br/><br/>
 Now you can test all the methods.
+
 
 ## Test Application On Postman
+<p>&nbsp; Get exported collection files from 'minifileservice/docs/postman collections' and import them in the postman. After the import please select LocalHost environment. Then you can start to test application.</p>
+
+- First run the 'Authenticate' request with the username and password. This request sets 'token' environment. After this request all other request will be runnuble.
+<br/>
+<img src = "/docs/images/PostmanAuth.png">
+<br/><br/>
+
+Now you can test all the methods. Some requests have path variable. You may need to update this path variables.
 
 
+<br/>
+<img src = "/docs/images/Postman3.png">
+<br/><br/>
+
+<br/>
+<img src = "/docs/images/Postman1.png">
+<br/><br/>
 
 
-Now you can test all the methods.
+<br/>
+<img src = "/docs/images/Postman2.png">
+<br/><br/>
+
 
 ---
 
